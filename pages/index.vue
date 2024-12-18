@@ -31,8 +31,8 @@
                         </div>
                             <!-- Add Pipeda images here-->
                             <div class="flex justify-center mt-12">
-                            <img class="mr-6" src="@/assets/PIPEDA.svg">
-                            <img src="@/assets/HIPAA.svg">
+                            <img class="mr-6" :src="require('@/assets/PIPEDA.svg')" alt="PIPEDA">
+                            <img :src="require('@/assets/HIPAA.svg')" alt="HIPAA">
                         </div>
 
                     </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="max-w-screen-md mx-auto pt-16">
-            <img class=" w-full max-w-[75vw] h-auto mx-auto rounded-lg shadow-lg" src="@/assets/HeroImage.png" alt="hero-img" />
+            <img class=" w-full max-w-[75vw] h-auto mx-auto rounded-lg shadow-lg" :src="require('@/assets/HeroImage.png')" alt="hero-img" />
         </img>
         </div>
         </section>
@@ -89,7 +89,7 @@
                             <div class="col-span-full rounded-xl border-gray-200 sm:col-span-3 lg:col-span-2 overflow-hidden relative p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color]">
                                 <div>
                                     <div class="pt-6 lg:px-6">
-                                        <img class ="w-full" src="@/assets/growUsers.svg">
+                                        <img class ="w-full" :src="require('@/assets/growUsers.svg')">
                                     </div>
                                     <div class="mt-8 p-6 text-center relative z-10 space-y-2">
                                         <h2 class="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 ">More Clients With Less</h2>
@@ -113,7 +113,7 @@
                                     <div class="relative mt-6 sm:mt-auto h-fit -mb-[calc(var(--card-padding)+1px)] -mr-[calc(var(--card-padding)+1px)] sm:ml-6 py-6 p-6 border rounded-tl-[calc(var(--card-border-radius)-0.5rem)]">
                                         <div class="absolute flex gap-1 top-2 left-3">
                                         </div>
-                                        <img src="@/assets/scribble.jpg">
+                                        <img :src="require('@/assets/scribble.jpg')">
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
           </div>
         </div>
         <div class="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img class="w-full max-w-[75vw] h-auto mx-auto rounded-lg bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:max-w-[75vw]" src="@/assets/HeroImage.png" alt="" />
+          <img class="w-full max-w-[75vw] h-auto mx-auto rounded-lg bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:max-w-[75vw]" :src="require('@/assets/HeroImage.png')" alt="Hero Image" />
         </div>
         <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div class="lg:pr-4">
@@ -238,7 +238,7 @@
           </div>
         </div>
         <div class="relative mt-16 h-80 lg:mt-8">
-          <img class="absolute left-0 top-0 lg:w-[36rem] w-[35rem] max-w-[80vw] rounded-md bg-white/5 ring-1 ring-white/10" src="@/assets/HeroImage.png" alt="App screenshot" />
+          <img class="absolute left-0 top-0 lg:w-[36rem] w-[35rem] max-w-[80vw] rounded-md bg-white/5 ring-1 ring-white/10" :src="require('@/assets/HeroImage.png')" alt="App screenshot" />
         </div>
       </div>
     </div>
