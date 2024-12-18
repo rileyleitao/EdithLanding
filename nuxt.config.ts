@@ -3,9 +3,12 @@ export default ({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss','@nuxtjs/sitemap','@nuxtjs/robots', ],
-
+  generate:{
+    dir: 'dist',
+  },
   // Enables Server-Side Rendering (SSR)
   ssr: true,
+  target: 'static',
 
   // Add the global CSS file
   css: [
@@ -50,6 +53,10 @@ export default ({
     },
   },
 
+    site:{
+      url: 'https://www.edithmedical.com',
+    },
+
   //Sitemap
   sitemap: {
     hostname: 'https://www.edithmedical.com', // Base URL of your site
@@ -70,6 +77,7 @@ export default ({
   //robots.txt
   robots:{
     UserAgent: '*', // This applies to all bots
+    Disallow: '',
     Allow: '/', // Allow crawlers to access all other pages
     Sitemap: 'https://www.edithmedical.com/sitemap.xml', // Add your sitemap URL here
   }
