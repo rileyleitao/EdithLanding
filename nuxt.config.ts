@@ -6,6 +6,7 @@ export default ({
 
   // Enables Server-Side Rendering (SSR)
   ssr: true,
+  target: 'static',
 
   // Add the global CSS file
   css: [
@@ -50,11 +51,9 @@ export default ({
     },
   },
 
-  seo:{
     site:{
       url: 'https://www.edithmedical.com',
     },
-  },
 
   //Sitemap
   sitemap: {
@@ -76,6 +75,7 @@ export default ({
   //robots.txt
   robots:{
     UserAgent: '*', // This applies to all bots
+    Disallow: '',
     Allow: '/', // Allow crawlers to access all other pages
     Sitemap: 'https://www.edithmedical.com/sitemap.xml', // Add your sitemap URL here
   }
