@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem]" :src="require('@/assets/HeroImage.png')" alt="Hero Image" />
+          <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem]" :src="'https://edithmedicallandingpage.s3.us-east-2.amazonaws.com/HeroImage.png'" alt="Hero Image" />
         </div>
         <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div class="lg:pr-4">
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="relative mt-16 h-80 lg:mt-8">
-          <img class="absolute left-0 top-0 lg:w-[36rem] w-[35rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" :src="require('@/assets/HeroImage.png')" alt="App screenshot" width="1824" height="1380" />
+          <img class="absolute left-0 top-0 lg:w-[36rem] w-[35rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" :src="'https://edithmedicallandingpage.s3.us-east-2.amazonaws.com/HeroImage.png'" alt="App screenshot" width="1824" height="1380" />
         </div>
       </div>
     </div>

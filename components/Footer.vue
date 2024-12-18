@@ -3,7 +3,7 @@
         <div class="max-w-6xl mx-auto space-y-16 px-6 py-16 text-gray-600 2xl:px-0">
             <div class="flex flex-wrap items-center justify-between gap-4 border-b pb-8 border-[--ui-light-border-color]">
                 <router-link to="/">
-                    <img class="w-32" :src="require('@/assets/lightLogo.svg')">
+                    <img class="w-32" :src="'https://edithmedicallandingpage.s3.us-east-2.amazonaws.com/lightLogo.svg'" alt="Light Logo">
                 </router-link>
             </div>
             <!-- Footer Content Here-->

@@ -10,7 +10,7 @@
             <div class="flex lg:flex-1">
               <nuxt-link to="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Edith Medical</span>
-                <img class="h-8 w-auto" :src="require('@/assets/lightLogo.svg')" alt="Edith Logo" />
+                <img class="h-8 w-auto" :src="'https://edithmedicallandingpage.s3.us-east-2.amazonaws.com/lightLogo.svg'" alt="Light Logo" />
               </nuxt-link>
             </div>
             <div class="flex lg:hidden">
@@ -54,7 +54,7 @@
               <div class="flex items-center justify-between">
                 <a href="#" class="-m-1.5 p-1.5">
                   <span class="sr-only">Your Company</span>
-                  <img class="h-8 w-auto" :src="require('@/assets/lightLogo.svg')" alt="" />
+                  <img class="h-8 w-auto" :src="'https://edithmedicallandingpage.s3.us-east-2.amazonaws.com/lightLogo.svg'" alt="Logo" />
                 </a>
                 <button
                   type="button"
