@@ -50,6 +50,12 @@ export default ({
     },
   },
 
+  seo:{
+    site:{
+      url: 'https://www.edithmedical.com',
+    },
+  },
+
   //Sitemap
   sitemap: {
     hostname: 'https://www.edithmedical.com', // Base URL of your site

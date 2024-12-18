@@ -10,7 +10,7 @@
                         <a href="https://cal.com/edithmedical/30min" class="border rounded-lg w-fit mx-auto flex justify-between items-center transition duration-200 rounded-[--annonce-border-radius] border-[--ui-light-border-color] hover:border-[--ui-light-border-hover-color] p-1 group gap-2">
                             <span class="inline-flex items-center rounded-md bg-blue-600 px-2 py-1 text-xs font-bold text-white ring-1 ring-inset ring-blue-700/10">New</span>
                             <span class="text-sm font-medium text-gray-700  flex gap-6">
-                                Introducing Edith
+                                Introducing Edith *Live*
                                 <div class="flex items-center -space-x-3 group-hover:-translate-x-1 transition-transform duration-300">
                                     <span class="w-2.5 translate-y-[-0.3px] -translate-x-px opacity-0 h-[1.5px] rounded bg-gray-950 origin-left scale-x-0 transition duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
                                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="size-4 text-gray-950 -translate-x-2 transition duration-300 group-hover:translate-x-px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
