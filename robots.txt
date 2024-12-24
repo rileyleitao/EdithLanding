@@ -1,6 +1,0 @@
-# START nuxt-robots (indexable)
-User-agent: *
-Allow: /
-
-Sitemap: https://www.edithmedical.com/sitemap.xml
-# END nuxt-robots
