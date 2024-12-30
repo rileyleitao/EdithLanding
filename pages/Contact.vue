@@ -81,16 +81,17 @@
   import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue'
   //import { getAnalytics, logEvent } from 'firebase/analytics';
   //import { app as firebaseApp } from '../firebase'
-  //import emailjs from '@emailjs/browser'
+  import emailjs from '@emailjs/browser'
   
-  const contactButtonClick = () => {
-    const analytics = getAnalytics();
-    logEvent(analytics, 'submit_contact_form', { button_name: 'contact_form_button' })
-    console.log("contact Button");
-  };
+  //const contactButtonClick = () => {
+    //const analytics = getAnalytics();
+   // logEvent(analytics, 'submit_contact_form', { button_name: 'contact_form_button' })
+    //console.log("contact Button");
+  //};
   
   const agreed = ref(false)
-  
+  const form = ref(null); // Define a ref for the form
+
   const formData = ref({
     firstName: '',
     lastName: '',
@@ -102,7 +103,7 @@
   })
   
   const validateForm = () => {
-    contactButtonClick()
+    //contactButtonClick()
   
     for (const key in formData.value) {
       if (!formData.value[key]) {
@@ -120,15 +121,22 @@
     alert('Thanks for reaching out, we will be in touch shortly!')
   }
   
-  const sendEmail = () => {
-    emailjs.sendForm('service_956p55f', 'YOUR_TEMPLATE_ID', this.$refs.form, 'KpTV--bRhodQ6FuNp')
-      .then((result) => {
-        console.log('SUCCESS!', result.text);
-      }, (error) => {
-        console.log('FAILED...', error.text);
-      });
+const sendEmail = () => {
+  // Access the form via ref
+  const formElement = form.value;
+
+  if (!formElement) {
+    console.error('Form reference is not available');
+    return;
   }
-// SEO
+
+  emailjs.sendForm('service_956p55f', 'edith_contact', formElement, 'KpTV--bRhodQ6FuNp')
+    .then((result) => {
+      console.log('SUCCESS!', result.text);
+    }, (error) => {
+      console.log('FAILED...', error.text);
+    });
+};// SEO
 definePageMeta({
   title: 'Edith AI | Revolutionizing Medical Transcription and Clinic Management',
   meta: [

@@ -48,7 +48,7 @@ const footerSections = [
     {
         title: 'Contact',
         links: [
-            { text: 'Email', to: '/contact' },
+            { text: 'Email', to: '/Contact' },
         ],
     },
 ];

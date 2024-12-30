@@ -5,12 +5,13 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "deploy": "gh-pages -d dist",
-    "generate": "nuxt generate",
+    "deploy": "cp CNAME dist/ && gh-pages -d dist",
+    "generate": "cp CNAME dist/ && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "@nuxtjs/robots": "^5.0.1",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.2.0",
+    "nuxt-headlessui": "^1.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
   }
