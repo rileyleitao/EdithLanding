@@ -1,19 +1,28 @@
-// nuxt.config.js
 export default ({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss','@nuxtjs/sitemap','@nuxtjs/robots', ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-headlessui', 'nuxt-gtag'],
+
+  gtag: {
+    id: 'G-BJQJ0WHP2Y'
+  },
+
+  generate: {
+    dir: 'dist',
+  },
 
   // Enables Server-Side Rendering (SSR)
   ssr: true,
 
-  // Add the global CSS file
+  target: 'static',
+
+  // Global CSS
   css: [
     '@/assets/css/tailwind.css', // Tailwind CSS
     '@/assets/css/style.css', // Custom styles
   ],
 
-  // Customize the app head (meta tags, title, etc.)
+  // Customize app head
   app: {
     head: {
       titleTemplate: "Edith Medical",
@@ -50,7 +59,11 @@ export default ({
     },
   },
 
-  //Sitemap
+  site: {
+    url: 'https://www.edithmedical.com',
+  },
+
+  // Sitemap configuration
   sitemap: {
     hostname: 'https://www.edithmedical.com', // Base URL of your site
     gzip: true, // Optionally enable gzip compression
@@ -58,19 +71,29 @@ export default ({
       // You can dynamically generate the routes here if needed
       return [
         '/',
-        '/features', 
+        '/features',
         '/contact',
         '/privacy',
         '/security',
-        'terms',
+        '/terms',
       ];
     },
   },
 
-  //robots.txt
-  robots:{
+  // Robots.txt configuration
+  robots: {
     UserAgent: '*', // This applies to all bots
+    Disallow: '',
     Allow: '/', // Allow crawlers to access all other pages
     Sitemap: 'https://www.edithmedical.com/sitemap.xml', // Add your sitemap URL here
-  }
+  },
+
+  // Important production-related settings
+  build: {
+    publicPath: '/_nuxt/', // Correct public path for assets in production
+  },
+
+  router: {
+    base: '/', // Ensure base path is set to '/' for root URL
+  },
 });

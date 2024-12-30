@@ -5,22 +5,28 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "deploy": "nuxt generate && cp CNAME .output/public/ && gh-pages -d .output/public",
+    "generate": "nuxt generate && cp CNAME .output/public/",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "@nuxtjs/robots": "^5.0.1",
     "@nuxtjs/sitemap": "^7.0.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "emailjs-com": "^3.2.0",
     "nuxt": "^3.14.1592",
-    "vue": "latest",
-    "vue-router": "latest"
-  },
+    "nuxt-gtag": "^3.0.2",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0"  },
+    
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "nuxt-headlessui": "^1.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
   }
