@@ -5,8 +5,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "deploy": "cp CNAME dist/ && gh-pages -d dist",
-    "generate": "cp CNAME dist/ && nuxt generate",
+    "deploy": "nuxt generate && cp CNAME .output/public/ && gh-pages -d .output/public",
+    "generate": "nuxt generate && cp CNAME .output/public/",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
@@ -19,9 +19,10 @@
     "@nuxtjs/tailwindcss": "^6.12.2",
     "emailjs-com": "^3.2.0",
     "nuxt": "^3.14.1592",
-    "vue": "latest",
-    "vue-router": "latest"
-  },
+    "nuxt-gtag": "^3.0.2",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0"  },
+    
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.2.0",
